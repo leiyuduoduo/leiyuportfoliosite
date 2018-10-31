@@ -1,0 +1,110 @@
+
+
+body {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16 px;
+  line-height: 2.6;
+  .root {
+    --white: #ffffff;
+    --blue: #0A79F6;
+    --red: #fb4141;
+    --black: #000000;
+    --green: #0EC833;
+    --purple:#AE48BF;
+    --darkgreen:#156306;
+
+
+    h1 {
+      font-family: Roboto;
+      font-size: 30px;
+      font-weight: 900;
+      font-style: black;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: black;
+    }
+
+    h2 {
+
+      font-family: Roboto;
+      font-size: 24px;
+      font-weight: 400;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: black;
+
+    }
+    h3  {
+      font-family: Roboto;
+      font-size: 15px;
+      font-weight: 400;
+      font-style: normal;
+      font-stretch: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: black;
+
+    }
+    div {
+      padding: 10px;
+      margin: 10px;
+    }
+    a {
+      color: #0EC833;
+    }
+
+    a:hover {
+      text-decoration: none; /* No underlining when hovering over a link */
+    }
+
+    a:visited {
+      /* visited link */
+      color: #156306;
+    }
+
+    a:active {
+      /* selected link */
+      color: #F6EF0A;
+    }
+
+    button
+    {
+      button {
+
+        background-color: #000000;
+        color: white !important;
+        text-decoration: none;
+        padding: 14px;
+        border-radius: 3px;
+        border-bottom: none; /* width of the border, type, color */
+        transition: none;
+      }
+    }
+
+
+
+
+    button:hover,
+    button:focus {
+      cursor: pointer; /* let's the mouse appear as hand when hovering over the button */
+      opacity: none; /* Reduces the opactiy of the button to 80% */
+    }
+
+
+
+    button-secondary {
+      border: none;
+      background-color: green;
+    }
+
+
+    secondary-button:hover,
+    secondary-button:focus {
+      cursor: pointer;
+      background-color: darkgreen;
+      opacity: 0.8;
+    }
