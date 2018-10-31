@@ -3,108 +3,66 @@
 body {
   background-color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 16 px;
-  line-height: 2.6;
-  .root {
-    --white: #ffffff;
-    --blue: #0A79F6;
-    --red: #fb4141;
-    --black: #000000;
-    --green: #0EC833;
-    --purple:#AE48BF;
-    --darkgreen:#156306;
+  font-size: 14 px;
+  font weight:300,400,700
+  line-height: 1.6;
+}
 
 
-    h1 {
-      font-family: Roboto;
-      font-size: 30px;
-      font-weight: 900;
-      font-style: black;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: black;
-    }
+h1 {
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: black;
+  color: #000;
+}
 
-    h2 {
+h2 {
 
-      font-family: Roboto;
-      font-size: 24px;
-      font-weight: 400;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: black;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
 
-    }
-    h3  {
-      font-family: Roboto;
-      font-size: 15px;
-      font-weight: 400;
-      font-style: normal;
-      font-stretch: normal;
-      line-height: normal;
-      letter-spacing: normal;
-      color: black;
+}
+h3  {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000;
 
-    }
-    div {
-      padding: 10px;
-      margin: 10px;
-    }
-    a {
-      color: #0EC833;
-    }
+}
 
-    a:hover {
-      text-decoration: none; /* No underlining when hovering over a link */
-    }
+a {
+  color: #0EC833;
+}
 
-    a:visited {
-      /* visited link */
-      color: #156306;
-    }
+a:visited {
+  /* visited link */
+  color: #104E05;
+}
 
-    a:active {
-      /* selected link */
-      color: #F6EF0A;
-    }
+a:hover,
+a:focus {
+  text-decoration: none; /* No underlining when hovering over a link */
+}
 
-    button
-    {
-      button {
+a:active {
+  /* selected link */
+  color: #F6EF0A;
+}
 
-        background-color: #000000;
-        color: white !important;
-        text-decoration: none;
-        padding: 14px;
-        border-radius: 3px;
-        border-bottom: none; /* width of the border, type, color */
-        transition: none;
-      }
-    }
-
-
-
-
-    button:hover,
-    button:focus {
-      cursor: pointer; /* let's the mouse appear as hand when hovering over the button */
-      opacity: none; /* Reduces the opactiy of the button to 80% */
-    }
-
-
-
-    button-secondary {
-      border: none;
-      background-color: green;
-    }
-
-
-    secondary-button:hover,
-    secondary-button:focus {
-      cursor: pointer;
-      background-color: darkgreen;
-      opacity: 0.8;
-    }
+.button {
+  background: #000000;
+  color: white !important;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: none; /* width of the border, type, color */
+  display: inline-block;
+}
+.button:hover, .button:focus {
+  opacity: 0.8; /* Reduces the opactiy of the button to 80% */
+}
