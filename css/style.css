@@ -10,6 +10,7 @@ body {
 h1 {
   font-size: 30px;
   font-weight: 700;
+  text-align: center; /* Centers text */
 }
 
 h2 {
@@ -56,4 +57,82 @@ a:active {
 }
 .button:hover, .button:focus {
   opacity: 0.8; /* Reduces the opactiy of the button to 80% */
+}
+
+.container {
+  position: relative;
+  float: right;
+  min-width: 360px;
+  max-width: 1200px;
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+}
+
+.container-block {
+  display: block;
+}
+
+.container-inline-block {
+  display: inline-block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Layout styling */
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  padding: 0 20px;
+}
+
+.column-4 {
+  width: 24%;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 1%;
+  float: left;
+  text-align: center; /* Centers text */
+}
+
+.columns-container {
+  font-size: 0;
+}
+
+.column-4:last-child {
+margin-right: 0;
+}
+
+.navigation {
+  list-style-type: none;
+  padding: 0;
+  float: right;
+}
+
+.navigation > li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@media all and (max-width: 500px) {
+  .logo {
+    /* Make logo smaller by changing it's height */
+    height: 50px;
+  }
+  h1 {
+    /* Reduce font-size of heading */
+    font-size: 24px;
+    text-align: left;
+  }
+  .column-4 {
+    /* Modify 4-column to 2-columns */
+    width: 49%;
+    margin-right: 1%;
+  }
+}
+
+.column-4:nth-child(even) {
+margin-right: 0;
 }
