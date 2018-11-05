@@ -11,21 +11,27 @@
 </head>
 
 <body>
-  <div class="wrapper">
   <header>
-    <nav>
+    <div class="wrapper">
       <img class="logo" src="img/rain.png" alt="logo">
-      <ul class="navigation">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <ul class="navigation">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <br>
-  <h1 class="hi">Hi, my name is LEI YU. <span>Welcome to my portfolio site!</span></h1>
 
-  <div><!--this will be the container that “contains” the 4 columns-->
+  <div class="page-heading">
+    <div class="wrapper">
+      <h1 class="h1">Hi, my name is LEI YU. <span>Welcome to my portfolio site!</span></h1>
+    </div>
+  </div>
+
+  <div class="project"><!--this will be the container that “contains” the 4 columns-->
+    <div class="wrapper">
     <div class="column-4"><!-- this will be the first column-->
       <img src="img/inktank.jpg" alt="InkTank UX project" >
       <h2>InkTank UX project</h2>
@@ -45,6 +51,7 @@
       <img src="img/H5game.png" alt="H5 game UX project" >
       <h2>H5 game UX project</h2>
     </div><!-- this will end the fourth column-->
+  </div>
   </div><!-- this will close the container-->
 
 </body>
