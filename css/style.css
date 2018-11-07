@@ -1,4 +1,4 @@
-
+*{box-sizing: border-box;}
 body {
   background-color: white;
   font-family: 'Roboto', sans-serif;
@@ -27,7 +27,7 @@ img {
 }
 
 a {
-  color: #ED14E6;
+  color: #0DD390;
 }
 
 a:visited {
@@ -46,16 +46,28 @@ a:active {
 }
 
 .button {
-  background: #ED14E6;
+  background: #0DD390;
   color: white !important;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: none; /* width of the border, type, color */
   display: inline-block;
+  margin-top: 30px;
 }
 .button:hover, .button:focus {
   opacity: 0.8; /* Reduces the opactiy of the button to 80% */
+}
+.address{
+  margin-bottom: 30px;
+}
+.linkedin {
+  max-width: 60px;
+  margin-top: 30px;
+}
+
+.Skype {
+  margin-top: 30px;
 }
 
 /* Layout styling */
@@ -83,16 +95,18 @@ a:active {
 margin-right: 0;
 }
 
+
 /*header*/
 header {
-  border-bottom: 3px solid #777;
-  margin-bottom: 50px;
-  padding: 10px 0 30px;
+  border-bottom: 3px solid #fff;
+  margin-bottom: 10px;
+  padding: 10px 0 10px;
   background: #000;
 }
 .logo {
-  max-width: 150px
+  max-width: 110px
 }
+
 nav {
   display: inline-block;
   float: right;
@@ -100,7 +114,7 @@ nav {
 }
 .navigation > li {
   display: inline-block;
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
 .navigation {
@@ -120,22 +134,53 @@ nav a:visited{
 }
 
 nav a:hover{
-  color: #5FD0DD;
+  color: #0DD390;
 }
 
 nav a:active{
-  color: #5FD0DD;
+  color: #0DD390;
 }
 
 a.active{
-  color: #5FD0DD !important;
+  color: #0DD390 !important;
 }
 
 /*heading*/
 .page-heading {
   padding: 20px 0 40px;
   text-align: center;
+  margin-top: 30px;
 }
+
+.h2 {
+  margin-top: 80px;
+}
+.rainpic {
+  float: left;
+  max-width: 400px;
+  margin-top: 60px;
+}
+
+/*body*/
+.contact-details {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: : 50px;
+  padding: 10px;
+}
+
+.abtimg {
+  max-width: 77%;
+  width: 98%;
+  display: block;
+  margin: 70px auto;
+}
+.row-4 {
+  margin-top: 50px;
+}
+
 
 @media all and (max-width: 767px) {
   header {
@@ -147,6 +192,10 @@ a.active{
   }
   nav {
     float: none;
+  }
+  .navigation > li {
+    margin-left: 10px;
+    margin-right: 10px;
   }
   h1 {
     /* Reduce font-size of heading */
